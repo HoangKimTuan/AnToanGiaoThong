@@ -1,0 +1,49 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.cpu10225.antoangiaothong.MapsActivity" />
+
+    <ImageView
+        android:id="@+id/red"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/yellow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/red"
+        android:layout_alignStart="@+id/red"
+        android:layout_below="@+id/red"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/banana" />
+
+    <ImageView
+        android:id="@+id/orange"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/yellow"
+        android:layout_alignStart="@+id/yellow"
+        android:layout_below="@+id/yellow"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/orange" />
+
+</RelativeLayout>
+
+
